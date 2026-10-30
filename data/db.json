@@ -1,0 +1,79 @@
+{
+  "students": [
+    {
+      "name": "Aarav S",
+      "email": "aarav.sharma@college.edu",
+      "rollNo": "2024CS101",
+      "department": "Computer Science",
+      "year": "3rd Year",
+      "course": "Full Stack Web Development",
+      "status": "Active",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Diya Patel",
+      "email": "diya.patel@college.edu",
+      "rollNo": "2024IT105",
+      "department": "Information Technology",
+      "year": "2nd Year",
+      "course": "Database Management Systems",
+      "status": "Active"
+    },
+    {
+      "id": "3",
+      "name": "Rohan Verma",
+      "email": "rohan.verma@college.edu",
+      "rollNo": "2024EC112",
+      "department": "Electronics",
+      "year": "3rd Year",
+      "course": "Internet of Things & Embedded Systems",
+      "status": "Active"
+    },
+    {
+      "id": "4",
+      "name": "Ananya Iyer",
+      "email": "ananya.iyer@college.edu",
+      "rollNo": "2024CS145",
+      "department": "Computer Science",
+      "year": "4th Year",
+      "course": "Cloud Computing & DevOps",
+      "status": "Inactive"
+    }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "courseCode": "CS301",
+      "title": "Full Stack Web Development",
+      "instructor": "Dr. Rajesh K.",
+      "credits": 4,
+      "department": "Computer Science"
+    },
+    {
+      "id": "2",
+      "courseCode": "IT204",
+      "title": "Database Management Systems",
+      "instructor": "Prof. Meenakshi S.",
+      "credits": 3,
+      "department": "Information Technology"
+    },
+    {
+      "id": "3",
+      "courseCode": "EC305",
+      "title": "Internet of Things & Embedded Systems",
+      "instructor": "Dr. Sunil Rao",
+      "credits": 4,
+      "department": "Electronics"
+    },
+    {
+      "id": "4",
+      "courseCode": "CS402",
+      "title": "Cloud Computing & DevOps",
+      "instructor": "Prof. Anita Sen",
+      "credits": 3,
+      "department": "Computer Science"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
