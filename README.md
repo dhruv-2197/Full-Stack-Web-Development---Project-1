@@ -4,13 +4,59 @@ A modern, responsive web-based Academic Management System built for tracking stu
 
 ---
 
+## 🚀 Quick Setup & How to Run
+
+### Prerequisites
+* [Node.js](https://nodejs.org/) (v16.0 or higher recommended)
+* Any modern web browser (Google Chrome, Microsoft Edge, Mozilla Firefox)
+
+### Step 1: Clone the Repository
+```bash
+git clone https://github.com/dhruv-2197/Full-Stack-Web-Development---Project-1.git
+cd Full-Stack-Web-Development---Project-1
+```
+
+### Step 2: Start the Mock REST API (JSON Server)
+You can launch the backend using `npm` or directly with `npx`:
+
+**Option A (Recommended via npm):**
+```bash
+npm install
+npm start
+```
+
+**Option B (Using npx directly):**
+```bash
+npx json-server --watch data/db.json --port 3000
+```
+
+> **Expected Server Output:**
+> ```text
+> Loading data/db.json
+> Done
+> 
+> Resources
+> http://localhost:3000/students
+> http://localhost:3000/courses
+> 
+> Home
+> http://localhost:3000
+> ```
+
+### Step 3: Launch the Application
+Open `index.html` directly in your web browser, or launch it with VS Code Live Server.
+
+> **Offline Fallback:** If the JSON Server is not running, the application automatically uses browser `localStorage` so that all UI operations and evaluations continue to work seamlessly.
+
+---
+
 ## 1. Project Purpose & Highlights
 
-Educational institutions need an intuitive system to manage student enrollments and course curricula without cumbersome spreadsheets. This application provides a streamlined administrative interface:
+Educational institutions need an intuitive system to manage student enrollments and course curricula without cumbersome spreadsheets:
 * **Executive Dashboard:** Live metrics displaying Total Students, Active Students, Courses, and Academic Departments.
 * **Student Directory (CRUD):** Add, view, edit, and delete student records with instant modal forms, live search filtering by name/department, and badge indicators.
 * **Course Catalog (CRUD):** Manage course offerings with course codes, instructor assignments, credit points, and department mappings.
-* **Offline Resiliency:** Features an automated LocalStorage fallback layer so that UI functionality and evaluation remain seamless even without an active backend.
+* **Offline Resiliency:** Features an automated LocalStorage fallback layer so that UI functionality remains operational during evaluations.
 
 ---
 
@@ -44,58 +90,13 @@ Educational institutions need an intuitive system to manage student enrollments 
 ├── courses.html                 # Course Offerings & Curriculum CRUD
 ├── package.json                 # Project configuration & npm scripts
 ├── .gitignore                   # Ignored files for Git version control
+├── LICENSE                      # MIT Open Source License
 └── README.md                    # Setup and execution guide
 ```
 
 ---
 
-## 4. Quick Start & Execution
-
-### Prerequisites
-* [Node.js](https://nodejs.org/) (v16.0 or higher recommended)
-* Any modern web browser (Google Chrome, Microsoft Edge, Mozilla Firefox)
-
-### Step 1: Clone the Repository
-```bash
-git clone https://github.com/<your-username>/student-course-management-system.git
-cd student-course-management-system
-```
-
-### Step 2: Start the Mock REST API (JSON Server)
-You can start the mock server using npm or directly with npx:
-
-**Option A (Using npm):**
-```bash
-npm install
-npm start
-```
-
-**Option B (Using npx directly):**
-```bash
-npx json-server --watch data/db.json --port 3000
-```
-
-> *Expected Terminal Output:*
-> ```text
-> Loading data/db.json
-> Done
-> 
-> Resources
-> http://localhost:3000/students
-> http://localhost:3000/courses
-> 
-> Home
-> http://localhost:3000
-> ```
-
-### Step 3: Launch the Application
-Open `index.html` in your web browser, or launch using VS Code Live Server / any local web server.
-
-> **Note on Offline Mode:** If JSON Server is not running, the application automatically falls back to browser `localStorage` so that UI functionality remains operational during evaluations.
-
----
-
-## 5. REST API Endpoints Specification
+## 4. REST API Endpoints Specification
 
 ### Students Resource (`/students`)
 * `GET /students` – Retrieve all student records.
@@ -111,7 +112,7 @@ Open `index.html` in your web browser, or launch using VS Code Live Server / any
 
 ---
 
-## 6. Verification & Test Cases
+## 5. Verification & Test Cases
 
 | Test Case | Inputs / Action | Expected Result | Status |
 | :--- | :--- | :--- | :--- |
@@ -123,5 +124,5 @@ Open `index.html` in your web browser, or launch using VS Code Live Server / any
 
 ---
 
-## 7. License
+## 6. License
 This project is open-source and available under the [MIT License](LICENSE).
